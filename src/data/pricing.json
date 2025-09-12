@@ -1,30 +1,30 @@
 [
   {
-    "title": "Basic plan",
-    "tag": "Most popular",
-    "content": "One designer, 5 days a month",
-    "cta": "Start free trial",
+    "title": "Базовый план",
+    "tag": "Популярный выбор",
+    "content": "1 грузоперевозка, до 5 дней в месяц",
+    "cta": "Начать бесплатно",
     "price": 999,
     "services": [
-      { "item": "Access to basic services" },
-      { "item": "Basic assets and logos" },
-      { "item": "Up to 10 individual assets" },
-      { "item": "Teams/slack chat" },
-      { "item": "Cancel Anytime" }
+      { "item": "Доступ к основным логистическим услугам" },
+      { "item": "Перевозка по фиксированным маршрутам" },
+      { "item": "До 10 отправок в месяц" },
+      { "item": "Онлайн-поддержка и консультации" },
+      { "item": "Гибкое расторжение договора" }
     ]
   },
   {
-    "title": "Enterprise plan",
-    "tag": "Best value",
-    "content": "One team, 5 days a month",
-    "cta": "Enquire now",
+    "title": "Корпоративный план",
+    "tag": "Лучшее соотношение цены и качества",
+    "content": "1 команда, до 20 дней перевозок в месяц",
+    "cta": "Оставить заявку",
     "price": 2999,
     "services": [
-      { "item": "All basic plan services" },
-      { "item": "100 assets" },
-      { "item": "Advanced reporting and analytics" },
-      { "item": "Up to 30 individual renders" },
-      { "item": "120GB storage allowance" }
+      { "item": "Все услуги базового плана" },
+      { "item": "До 100 отправок в месяц" },
+      { "item": "Расширенная аналитика и отчётность" },
+      { "item": "Персональный менеджер по логистике" },
+      { "item": "Расширенное складское хранение до 120 м³" }
     ]
   }
 ]

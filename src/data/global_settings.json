@@ -4,30 +4,30 @@
   "social_image": "/1200x630.jpg",
   "base_url": "https://astro-theme.blackspike.com",
   "demo": {
-    "title": "Need design?",
+    "title": "Оставить заявку",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Book a call"
+    "cta": "Оставить заявку"
   },
   "theme_color": "#18181b",
   "nav": [
     {
-      "title": "Services",
+      "title": "О компании",
       "link": "/#services"
     },
     {
-      "title": "Case studies",
+      "title": "Услуги",
       "link": "/#case-studies"
     },
     {
-      "title": "Pricing",
+      "title": "Преимущества",
       "link": "/#pricing"
     },
     {
-      "title": "FAQ",
+      "title": "Связаться",
       "link": "/#faq"
     },
     {
-      "title": "Newsletter",
+      "title": "Новости",
       "link": "/#newsletter"
     }
   ],
@@ -39,19 +39,19 @@
     },
     {
       "title": "Mastodon",
-      "link": "https://mastodon.cloud/@blackspike"
+      "link": "https://mastodon.cloud/"
     },
     {
       "title": "GitHub",
-      "link": "https://github.com/blackspike/"
+      "link": "https://github.com/"
     },
     {
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/company/blackspike"
+      "link": "https://www.linkedin.com/company/"
     },
     {
       "title": "Bluesky",
-      "link": "https://bsky.app/profile/blackspike.com/"
+      "link": "https://bsky.app/profile/"
     }
   ]
 }

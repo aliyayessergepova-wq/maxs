@@ -49,7 +49,7 @@ const { title, services } = Astro.props
 
           {/* BG image */}
           <img src={ item.image } alt={ item.image_alt } loading="lazy"
-            class="opacity-20 md:opacity-80 rounded-xl grayscale overflow-hidden w-full h-full object-cover object-left absolute inset-0"
+            class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0"
             height="1024" width="768" />
 
           {/* Gradient mask */}
@@ -59,12 +59,13 @@ const { title, services } = Astro.props
 
           {/* Content */}
           <figcaption class="z-10 p-6 sm:p-10 md:p-20 max-w-xl flex flex-col gap-6 h-full">
+            <div class="relative z-10 bg-[#fdc700]/80 p-8 rounded-xl max-w-prose text-black space-y-8">
+              {/* Title */}
+              <h2 class="bs-h3 text-black font-extrabold" set:html={ item.title } />
 
-            {/* Title */}
-            <h2 class="bs-h2" set:html={ item.title } />
-
-            {/* Intro */}
-            <div class="bs-body-text text-pretty flex-1" set:html={ item.content } />
+              {/* Intro */}
+              <p class="bs-body-text text-pretty flex-1 text-gray-800/80 leading-relaxed" set:html={ item.content } />
+            </div>  
 
             {/* Cta */}
             <button type="button" class="bs-btn inline-block self-start bs-mt-sm" onclick="demo.showModal()">
