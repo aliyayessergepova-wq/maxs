@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Двигаем торговлю.<br>Доставляем успех.",
+    "sector": "Международные перевозки",
+    "content": "<strong>Наши надежные решения в сфере грузоперевозок помогают бизнесу выходить на глобальные рынки без лишних барьеров.</strong> <br><br>От таможенного оформления до отслеживания в реальном времени — мы упрощаем международную логистику и строим долгосрочное доверие с клиентами.",
+    "case_study_link": "#",
+    "cta": "Запросить расчет",
+    "image": "/content-images/young-man-working-warehouse-with-boxes.jpg",
+    "image_alt": "Контейнеровоз с грузом",
+    "bg": "bg-gradient-to-r from-blue-900 to-blue-600"
+  },
+  {
+    "title": "Быстрее доставки.<br>Умнее логистика.",
+    "sector": "Автоперевозки",
+    "content": "Современный автопарк и оптимизированные маршруты гарантируют, что ваш груз прибудет <strong>в срок и в сохранности</strong>. Мы объединяем <strong>эффективность затрат</strong> и <strong>масштабируемые решения</strong> для бизнеса любого размера.",
+    "case_study_link": "#",
+    "cta": "Узнать об автоперевозках",
+    "image": "/content-images/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpg",
+    "image_alt": "Грузовик на трассе",
+    "bg": "bg-gradient-to-r from-blue-600 to-sky-500"
+  },
+  {
+    "title": "Эффективность в масштабе.<br>Надежность на каждом шаге.",
+    "sector": "Складская логистика",
+    "content": "С безопасными складами и современными системами учета мы предлагаем <strong>умное хранение</strong> и <strong>оперативное распределение</strong>. Масштабируйте бизнес с уверенностью.",
+    "case_study_link": "#",
+    "cta": "Подробнее о складской логистике",
+    "image": "/content-images/young-man-working-warehouse-with-boxes.jpg",
+    "image_alt": "Склад с грузовыми паллетами",
+    "bg": "bg-gradient-to-r from-yellow-600 to-yellow-400"
+  }
+]

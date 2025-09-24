@@ -1,14 +1,32 @@
 {
   "title": "Max Spedition Международные перевозки",
-  "description": "Max Spedition",
+  "description": "Max Spedition — надежный партнер в сфере международных и внутриреспубликанских грузоперевозок. Мы обеспечиваем безопасную, своевременную доставку и комплексные логистические решения для вашего бизнеса.",
   "social_image": "/content-images/industrial-port-container-yard.jpg",
-  "base_url": "https://maxs-eosin.vercel.app/",
+  "base_url": "https://maxs.kz",
   "demo": {
     "title": "Оставить заявку",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
     "cta": "Оставить заявку"
   },
   "theme_color": "#18181b",
+  "nav": [
+    {
+      "title": "О компании",
+      "link": "/#about"
+    },
+    {
+      "title": "Сервисы",
+      "link": "/#services"
+    },
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Контакты",
+      "link": "/#newsletter"
+    }
+  ],
 
   "social_links": [
     {

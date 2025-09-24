@@ -68,7 +68,7 @@ const { title, services } = Astro.props
             </div>  
 
             {/* Cta */}
-            <button type="button" class="bs-btn inline-block self-start bs-mt-sm" onclick="demo.showModal()">
+            <button type="button" class="bs-btn inline-block self-start bs-mt-sm" onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })">
               { item.cta }
             </button>
 

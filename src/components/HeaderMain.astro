@@ -2,11 +2,10 @@
 
 import Logo from '../assets/theme-images/logo.svg'
 
-const { settings } = Astro.props
-
+const { settings, lang } = Astro.props
 ---
 
-<header class="wrapper bg-loop font-semibold">
+<header class="wrapper bg-loop font-semibold" id="about">
 
   <!-- Wrapper -->
   <div class="bs-container py-6 flex justify-between items-center">
@@ -14,7 +13,7 @@ const { settings } = Astro.props
     <!-- Logo -->
     <a class="flex xl:min-w-32 group" href="/" aria-label={ settings.title + ' - Home' }>
 
-      <Logo class="group-hover:-rotate-180 group-hover:scale-80 transition-transform ease-bs-spring duration-1000" height="48" width="48" />
+      <h1 class="bs-h3">Max Spedition</h1>
 
     </a>
 
@@ -32,12 +31,30 @@ const { settings } = Astro.props
 
     </nav>
 
-    <!-- CTA -->
-    <button type="button" class="min-w-32 bs-btn" onclick="demo.showModal()">
 
-      { settings.demo.title }
+    <!-- Accessible Language Switcher -->
+    <div class="flex items-center gap-4">
+      <!-- Language selector -->
+      <div class="relative inline-block">
+        <label for="lang-switcher" class="sr-only">Выбор языка / Language selector</label>
+        
+        <select
+          id="lang-switcher"
+          class="appearance-none !bg-bs-surface-1 border border-bs-surface-3 cursor-pointer px-5 py-4 pr-10 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-bs-accent focus-visible:ring-white/75" 
+          aria-label="Language selector"
+          onchange="window.location.pathname = this.value === 'ru' ? '/' : '/en';"
+        >
+          <option value="ru" selected={lang === 'ru'}>Русский</option>
+          <option value="en" selected={lang === 'en'}>English</option>
+        </select>
 
-    </button>
+        <!-- Custom arrow -->
+        <svg class="pointer-events-none absolute top-1/2 right-3 w-4 h-4 -translate-y-1/2 text-bs-foreground-dark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+
+    </div>
 
   </div>
 

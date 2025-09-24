@@ -7,10 +7,10 @@ const { settings, title, content } = Astro.props
 
 ---
 
-<section class="bs-container py-6 flex flex-col lg:flex-row items-center">
+<section class="bs-container py-6 flex flex-col items-start">
 
   <!-- Content -->
-  <div class="flex flex-col gap-6 lg:max-w-lg w-full py-16">
+  <div class="flex flex-col gap-6 lg:w-[70%] w-full py-16">
 
     <!-- Title -->
     <h1 class="bs-h1" set:html={ title } />
@@ -19,7 +19,7 @@ const { settings, title, content } = Astro.props
     <div class="bs-body-text xl:text-xl flex flex-col gap-4 [&_p]:last:text-[#737373]" set:html={ content } />
 
     <!-- CTA -->
-    <button type="button" class="bs-btn self-start bs-mt-sm" onclick="demo.showModal()">
+    <button type="button" class="bs-btn self-start bs-mt-sm" onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })">
       { settings.demo.cta }
     </button>
 

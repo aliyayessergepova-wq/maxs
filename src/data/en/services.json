@@ -1,0 +1,30 @@
+[
+  {
+    "title": "International Freight Transport",
+    "content": "<strong>Your success depends on uninterrupted delivery.</strong> We provide comprehensive logistics services tailored to your business needs, ensuring safe and timely cargo delivery.",
+    "cta": "Contact Us",
+    "image": "/content-images/industrial-port-container-yard.jpg",
+    "image_alt": "Cargo containers being loaded"
+  },
+  {
+    "title": "Domestic Transport",
+    "content": "<strong>Reliable transport across the country.</strong> We organize transportation via road, rail, and air with maximum speed, transparency, and safety.",
+    "cta": "Contact Us",
+    "image": "/content-images/young-man-working-warehouse-with-boxes.jpg",
+    "image_alt": "Cargo truck on highway"
+  },
+  {
+    "title": "Customs Clearance",
+    "content": "<strong>Fast and secure cargo processing.</strong> We help you navigate all customs procedures without delays, minimizing risks and optimizing the import and export process.",
+    "cta": "Contact Us",
+    "image": "/content-images/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpg",
+    "image_alt": "Warehouse with stacked pallets"
+  },
+  {
+    "title": "Additional Services",
+    "content": "<strong>Online tracking and digital solutions.</strong> We provide analytics and control at every stage of transportation, helping optimize business processes.",
+    "cta": "Contact Us",
+    "image": "/content-images/industrial-port-container-yard.jpg",
+    "image_alt": "Logistics tracking dashboard on screen"
+  }
+]

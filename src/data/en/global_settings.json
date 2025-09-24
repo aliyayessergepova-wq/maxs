@@ -1,14 +1,32 @@
 {
-  "title": "Max Spedition Международные перевозки",
+  "title": "Max Spedition International Shipping",
   "description": "Max Spedition",
   "social_image": "/content-images/industrial-port-container-yard.jpg",
-  "base_url": "https://maxs-eosin.vercel.app/",
+  "base_url": "https://maxs.kz",
   "demo": {
-    "title": "Оставить заявку",
+    "title": "Contact us",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Оставить заявку"
+    "cta": "Contact us"
   },
   "theme_color": "#18181b",
+  "nav": [
+    {
+      "title": "About Company",
+      "link": "/en/#about"
+    },
+    {
+      "title": "Services",
+      "link": "/en/#services"
+    },
+    {
+      "title": "FAQ",
+      "link": "/en/#faq"
+    },
+    {
+      "title": "Contact",
+      "link": "/en/#newsletter"
+    }
+  ],
 
   "social_links": [
     {
@@ -26,10 +44,6 @@
     {
       "title": "LinkedIn",
       "link": "https://www.linkedin.com/company/"
-    },
-    {
-      "title": "Bluesky",
-      "link": "https://bsky.app/profile/"
     }
   ]
 }

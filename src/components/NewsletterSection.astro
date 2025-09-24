@@ -1,9 +1,8 @@
 ---
-import Image from "astro/components/Image.astro"
-import bg_image from "../assets/theme-images/hero-image.jpg"
+import Image from "astro/components/Image.astro";
+import bg_image from "../assets/theme-images/hero-image.jpg";
 
-const { newsletter } = Astro.props
-
+const { newsletter } = Astro.props;
 ---
 
 <aside class="@container bs-container bs-mt-lg text-center" id="newsletter">
@@ -11,41 +10,137 @@ const { newsletter } = Astro.props
   <!-- Wrapper -->
   <div class="p-6 md:py-16 relative rounded-xl overflow-hidden flex justify-center isolate w-full h-full">
 
-    <!-- BG image -->
-    <Image src={ bg_image } alt="" format="avif" height={1080} width={1920} class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0 opacity-50" />
+    <!-- Background image -->
+    <Image 
+      src={bg_image} 
+      alt="" 
+      format="avif" 
+      height={1080} 
+      width={1920} 
+      class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0 opacity-50" 
+    />
 
     <!-- Content -->
     <div class="z-10 p-6 md:p-10 lg:p-20 rounded-xl md:max-w-lg flex flex-col gap-6 bg-bs-surface-0/95 h-full">
 
       <!-- Title -->
-      <h2 class="bs-h2" set:html={ newsletter.title } />
+      <h2 class="bs-h2" set:html={newsletter.title} />
 
       <!-- Intro -->
-      <div class="bs-body-text flex-grow" set:html={ newsletter.content } />
+      <div class="bs-body-text flex-grow" set:html={newsletter.content} />
 
       <!-- Form -->
-      <form class="flex gap-4 flex-col" action="">
+      <form
+        id="newsletter-form"
+        class="flex flex-col gap-4"
+        action="https://formspree.io/f/mnngqrro"
+        method="POST"
+        aria-describedby="newsletter-status"
+      >
 
+        <!-- Name -->
         <label class="sr-only" for="nl-name">Name</label>
         <input
           id="nl-name"
+          name="name"
+          type="text"
           class="border-2 rounded-lg text-center bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Name">
+          placeholder="Имя"
+        />
 
+        <!-- Email -->
         <label class="sr-only" for="nl-email">Email</label>
         <input
           id="nl-email"
+          name="email"
           type="email"
+          required
           class="border-2 rounded-lg text-center bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Email">
+          placeholder="Email"
+        />
 
-        <input type="submit" value={ newsletter.cta } class="bs-btn form-input px-4 py-3">
+        <!-- Message -->
+        <label class="sr-only" for="nl-message">Message</label>
+        <textarea
+          id="nl-message"
+          name="message"
+          rows="5"
+          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3 resize-none text-center"
+          placeholder="Ваше сообщение"
+          required
+        ></textarea>
+
+        <!-- Status message -->
+        <div id="newsletter-status" role="status" aria-live="polite" class="text-sm text-center"></div>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="bs-btn form-input px-4 py-3"
+        >
+          {newsletter.cta}
+        </button>
 
       </form>
 
     </div>
-
   </div>
-
 </aside>
 
+<script type="module">
+  const form = document.getElementById('newsletter-form');
+  const status = document.getElementById('newsletter-status');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    status.textContent = '';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const formData = new FormData(form);
+
+    // Basic validation
+    const email = formData.get('email');
+    const message = formData.get('message');
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      status.textContent = 'Please enter a valid email.';
+      status.className = 'text-red-500 text-sm text-center';
+      submitBtn.disabled = false;
+      submitBtn.textContent = '{newsletter.cta}';
+      return;
+    }
+    if (!message.trim()) {
+      status.textContent = 'Please enter a message.';
+      status.className = 'text-red-500 text-sm text-center';
+      submitBtn.disabled = false;
+      submitBtn.textContent = '{newsletter.cta}';
+      return;
+    }
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (res.ok) {
+        status.textContent = 'Спасибо! Ваша заявка была отправлена';
+        status.className = 'text-green-500 text-sm text-center';
+        form.reset();
+      } else {
+        const data = await res.json();
+        status.textContent = data?.error || 'Something went wrong. Please try again.';
+        status.className = 'text-red-500 text-sm text-center';
+      }
+    } catch (err) {
+      status.textContent = 'Failed to send. Please check your connection.';
+      status.className = 'text-red-500 text-sm text-center';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = '{newsletter.cta}';
+    }
+  });
+</script>

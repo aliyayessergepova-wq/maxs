@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Международные грузоперевозки",
+    "content": "<strong>Ваш успех зависит от бесперебойной доставки.</strong> Мы предоставляем комплексные логистические услуги, которые адаптируются под нужды вашего бизнеса, обеспечивая безопасную и своевременную доставку груза",
+    "cta": "Связаться с нами",
+    "image": "/content-images/industrial-port-container-yard.jpg",
+    "image_alt": "Cargo containers being loaded"
+  },
+  {
+    "title": "Внутриреспубликанские перевозки",
+    "content": "<strong>Надежные перевозки по всей стране.</strong> Мы организуем транспортировку по дорогам, железной дороге и авиатранспортом с максимальной скоростью, прозрачностью и безопасностью",
+    "cta": "Связаться с нами",
+    "image": "/content-images/young-man-working-warehouse-with-boxes.jpg",
+    "image_alt": "Cargo truck on highway"
+  },
+  {
+    "title": "Таможенное оформление",
+    "content": "<strong>Быстрое и безопасное оформление грузов.</strong> Мы помогаем пройти все этапы таможенных процедур без задержек, минимизируя риски и оптимизируя процесс импорта и экспорта",
+    "cta": "Связаться с нами",
+    "image": "/content-images/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpg",
+    "image_alt": "Warehouse with stacked pallets"
+  },
+  {
+    "title": "Дополнительные услуги",
+    "content": "<strong>Онлайн-отслеживание и цифровые решения.</strong> Мы предоставляем аналитику и контроль на всех этапах перевозки, помогая оптимизировать бизнес-процессы",
+    "cta": "Связаться с нами",
+    "image": "/content-images/industrial-port-container-yard.jpg",
+    "image_alt": "Logistics tracking dashboard on screen"
+  }
+]
